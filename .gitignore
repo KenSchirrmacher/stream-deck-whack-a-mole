@@ -1,0 +1,8 @@
+node_modules/
+*.log
+.DS_Store
+Thumbs.db
+com.homedeck.whackamole.sdPlugin/logs/
+com.homedeck.whackamole.sdPlugin/bin/
+com.homedeck.whackamole.sdPlugin/imgs/
+*.streamDeckPlugin

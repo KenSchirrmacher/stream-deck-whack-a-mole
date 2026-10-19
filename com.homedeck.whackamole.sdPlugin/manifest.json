@@ -1,0 +1,51 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "Name": "Whack-a-Mole",
+  "Version": "1.0.0.0",
+  "Author": "Home Deck",
+  "Description": "Turn a page of keys into a whack-a-mole game. A random key lights up with a bouncy little critter; tap it to score. Reach 15 points and every key fires off a fireworks celebration, then it resets and keeps going. Pair it with a Stream Deck folder page and the built-in Parent Folder action to hand the deck to a kid without worrying about them wandering off into your other profiles.",
+  "Icon": "imgs/plugin/plugin-icon",
+  "Category": "Whack-a-Mole",
+  "CategoryIcon": "imgs/plugin/category-icon",
+  "CodePath": "bin/plugin.js",
+  "DefaultWindowSize": [
+    420,
+    420
+  ],
+  "UUID": "com.homedeck.whackamole",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "6.9"
+  },
+  "Nodejs": {
+    "Version": "20",
+    "Debug": "enabled"
+  },
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    },
+    {
+      "Platform": "mac",
+      "MinimumVersion": "10.15"
+    }
+  ],
+  "Actions": [
+    {
+      "Name": "Mole Cell",
+      "UUID": "com.homedeck.whackamole.mole-cell",
+      "Icon": "imgs/actions/mole-cell/icon",
+      "Tooltip": "One square of the game grid. Place it on every key of a folder page and the keys will take turns popping up a critter to tap. All Mole Cell keys on the same page/device act as one shared game.",
+      "Controllers": [
+        "Keypad"
+      ],
+      "States": [
+        {
+          "Image": "imgs/actions/mole-cell/icon",
+          "ShowTitle": false
+        }
+      ]
+    }
+  ]
+}
